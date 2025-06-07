@@ -317,7 +317,7 @@ monitoring:
 - Sequencer downtime
 - Gas price spike > 3x average
 
-### 3. CI/CD Pipeline
+### 3. CI/CD Pipeline - Suggestion
 
 **Pipeline Architecture:**
 
@@ -442,6 +442,7 @@ ALCHEMY_API_KEY=your_alchemy_api_key
 # Network configuration
 NETWORK=mainnet                    # or "sepolia" for testnet
 RUST_LOG=info                      # or "debug" for verbose logs
+EXECUTION_NETWROK=sepolia
 
 # Arbitrage settings
 TRADE_SIZE_ETH=0.1                 # Trade size in ETH
