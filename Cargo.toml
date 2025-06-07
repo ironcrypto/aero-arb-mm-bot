@@ -1,0 +1,62 @@
+[package]
+name = "aero-arb-mm-bot"
+version = "0.5.0"
+edition = "2024"
+authors = ["Stephan Thomas <stephan@hedgenthyper.com>"]
+description = "AMM Arbitrage and Market-Making Simulator for Base Network"
+
+
+[dependencies]
+# Core async runtime
+tokio = { version = "1.40", features = ["full"] }
+
+# Ethereum/Web3
+alloy = { version = "0.7", features = ["full", "node-bindings", "rpc-types-anvil", "signers"] }
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+tracing-appender = "0.2"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Time handling
+chrono = { version = "0.4", features = ["serde"] }
+
+# Error handling
+anyhow = "1.0"
+thiserror = "2.0"
+
+# HTTP client
+reqwest = { version = "0.12", features = ["json"] }
+
+# Decimal math
+rust_decimal = { version = "1.36", features = ["serde"] }
+rust_decimal_macros = "1.36"
+
+# Utilities
+lazy_static = "1.5"
+uuid = { version = "1.11", features = ["v4", "serde"] }
+rand = "0.9.1"
+
+# Environment variables
+dotenv = "0.15"
+
+[dev-dependencies]
+# Testing utilities
+tokio-test = "0.4"
+mockito = "1.6"
+proptest = "1.5"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"
+
+[profile.dev]
+opt-level = 0
+debug = true

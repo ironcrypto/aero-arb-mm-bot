@@ -1,0 +1,299 @@
+2025-06-07T22:05:45.721095Z  INFO aero_arb_mm_bot: 🛩️  Aerodrome Arbitrage Bot v0.5.0 - Trade Execution & Volatility
+2025-06-07T22:05:45.721170Z  INFO aero_arb_mm_bot: 📋 Configuration:
+2025-06-07T22:05:45.721311Z  INFO aero_arb_mm_bot:    Network: mainnet
+2025-06-07T22:05:45.721341Z  INFO aero_arb_mm_bot:    Trade Size: 0.1 ETH
+2025-06-07T22:05:45.721353Z  INFO aero_arb_mm_bot:    Min Profit: $0.50
+2025-06-07T22:05:45.721360Z  INFO aero_arb_mm_bot:    Safety Checks: true
+2025-06-07T22:05:45.721367Z  INFO aero_arb_mm_bot:    Market Making: true
+2025-06-07T22:05:45.721372Z  INFO aero_arb_mm_bot:    Trade Execution: false
+2025-06-07T22:06:05.020833Z  INFO aero_arb_mm_bot: 🛩️  Aerodrome Arbitrage Bot v0.5.0 - Trade Execution & Volatility
+2025-06-07T22:06:05.020908Z  INFO aero_arb_mm_bot: 📋 Configuration:
+2025-06-07T22:06:05.021007Z  INFO aero_arb_mm_bot:    Network: mainnet
+2025-06-07T22:06:05.021028Z  INFO aero_arb_mm_bot:    Trade Size: 0.1 ETH
+2025-06-07T22:06:05.021036Z  INFO aero_arb_mm_bot:    Min Profit: $0.50
+2025-06-07T22:06:05.021042Z  INFO aero_arb_mm_bot:    Safety Checks: true
+2025-06-07T22:06:05.021047Z  INFO aero_arb_mm_bot:    Market Making: true
+2025-06-07T22:06:05.021053Z  INFO aero_arb_mm_bot:    Trade Execution: false
+2025-06-07T22:20:51.085553Z  INFO aero_arb_mm_bot: 🛩️  Aerodrome Arbitrage Bot v0.5.0 - Trade Execution & Volatility
+2025-06-07T22:20:51.085633Z  INFO aero_arb_mm_bot: 📋 Configuration:
+2025-06-07T22:20:51.085796Z  INFO aero_arb_mm_bot:    Network: mainnet
+2025-06-07T22:20:51.085820Z  INFO aero_arb_mm_bot:    Trade Size: 0.1 ETH
+2025-06-07T22:20:51.085858Z  INFO aero_arb_mm_bot:    Min Profit: $0.50
+2025-06-07T22:20:51.085869Z  INFO aero_arb_mm_bot:    Safety Checks: true
+2025-06-07T22:20:51.085876Z  INFO aero_arb_mm_bot:    Market Making: true
+2025-06-07T22:20:51.085882Z  INFO aero_arb_mm_bot:    Trade Execution: false
+2025-06-07T22:20:56.087490Z  INFO aero_arb_mm_bot:    Volatility Threshold: 5.0%
+2025-06-07T22:20:56.087612Z  INFO aero_arb_mm_bot:    Volatility Spread Multiplier: 2.0x
+2025-06-07T22:20:56.097870Z  INFO aero_arb_mm_bot: 🔗 Testing connection to Base network...
+2025-06-07T22:20:56.271983Z  INFO aero_arb_mm_bot: ✅ Connected to Base at block 31272754
+2025-06-07T22:20:56.272087Z  INFO aero_arb_mm_bot: 
+🔍 Validating Aerodrome pools on mainnet...
+2025-06-07T22:20:56.560671Z  INFO aero_arb_mm_bot: ✅ vAMM-WETH/USDbC - Valid WETH/USD pool
+2025-06-07T22:20:56.852989Z  INFO aero_arb_mm_bot: ✅ WETH/USDC - Valid WETH/USD pool
+2025-06-07T22:20:56.853280Z  INFO aero_arb_mm_bot: ✅ Validated 2 pools (failed: 0)
+2025-06-07T22:20:56.853316Z  INFO aero_arb_mm_bot: 
+🎯 Market Making Engine initialized with volatility adaptation
+2025-06-07T22:20:56.853346Z  INFO aero_arb_mm_bot:    Multi-timeframe volatility tracking: 5min, 30min, 1hour
+2025-06-07T22:20:56.853375Z  INFO aero_arb_mm_bot:    Dynamic spread adjustment based on volatility
+2025-06-07T22:20:56.853403Z  INFO aero_arb_mm_bot:    Position sizing adapts to market conditions
+2025-06-07T22:20:56.853654Z  INFO aero_arb_mm_bot: 
+🚀 Starting main monitoring loop...
+
+2025-06-07T22:20:56.854137Z  INFO aero_arb_mm_bot: 🏥 Health Check: DEX=FAIL, CEX=FAIL, Uptime=0s, Errors=0
+2025-06-07T22:20:57.199307Z  INFO aero_arb_mm_bot: 💹 vAMM-WETH/USDbC | DEX: $2519.7466 | CEX: $2523.8000 | Diff: 0.160% | Vol: 0.00%
+2025-06-07T22:20:57.419518Z  WARN aero_arb_mm_bot: 
+🎯 MARKET MAKING SIGNAL #c462f3ce-7d5f-483e-a5a6-ef712dec4c38
+2025-06-07T22:20:57.419822Z  WARN aero_arb_mm_bot: 📍 Pool: vAMM-WETH/USDbC
+2025-06-07T22:20:57.419853Z  WARN aero_arb_mm_bot: 💰 Price Analysis:
+2025-06-07T22:20:57.419901Z  WARN aero_arb_mm_bot:    Fair Value (CEX): $2523.8000
+2025-06-07T22:20:57.420009Z  WARN aero_arb_mm_bot:    Current Pool:     $2519.7466
+2025-06-07T22:20:57.420164Z  WARN aero_arb_mm_bot:    Target Bid:       $2520.1404
+2025-06-07T22:20:57.420230Z  WARN aero_arb_mm_bot:    Target Ask:       $2527.4595
+2025-06-07T22:20:57.420281Z  WARN aero_arb_mm_bot:    Effective Spread: 29 bps (0.290%)
+2025-06-07T22:20:57.420315Z  WARN aero_arb_mm_bot: 📊 Volatility Analysis:
+2025-06-07T22:20:57.420345Z  WARN aero_arb_mm_bot:    Short-term:  0.00%
+2025-06-07T22:20:57.420378Z  WARN aero_arb_mm_bot:    Medium-term: 0.00%
+2025-06-07T22:20:57.420410Z  WARN aero_arb_mm_bot:    Long-term:   0.00%
+2025-06-07T22:20:57.420442Z  WARN aero_arb_mm_bot:    Trend: Stable, Impact: Low
+2025-06-07T22:20:57.420470Z  WARN aero_arb_mm_bot: 📋 Strategy: TrendFollowing
+2025-06-07T22:20:57.420503Z  WARN aero_arb_mm_bot:    Bid Size: 0.5000 ETH
+2025-06-07T22:20:57.420540Z  WARN aero_arb_mm_bot:    Ask Size: 0.5000 ETH
+2025-06-07T22:20:57.420779Z  WARN aero_arb_mm_bot:    Risk Level: Conservative
+2025-06-07T22:20:57.420817Z  WARN aero_arb_mm_bot:    Duration Est: 120min
+2025-06-07T22:20:57.420846Z  WARN aero_arb_mm_bot: ⚠️  Risk Assessment:
+2025-06-07T22:20:57.420888Z  WARN aero_arb_mm_bot:    Overall Risk Score: 19.0/100
+2025-06-07T22:20:57.420982Z  WARN aero_arb_mm_bot:    Volatility Risk: 10.0/100
+2025-06-07T22:20:57.421022Z  WARN aero_arb_mm_bot:    Max Recommended Exposure: 4.0500 ETH
+2025-06-07T22:20:57.421060Z  WARN aero_arb_mm_bot:    1-Day VaR: $0.00
+2025-06-07T22:20:57.421086Z  WARN aero_arb_mm_bot: 🚨 Execution Priority: Medium
+2025-06-07T22:20:57.421102Z  WARN aero_arb_mm_bot: 📝 Strategy Rationale:
+2025-06-07T22:20:57.421122Z  WARN aero_arb_mm_bot:    Market Analysis: Current price $2519.7466 vs fair value $2523.8000 (-0.16% deviation). Volatility: Short=0.0%, Medium=0.0%, Long=0.0% (Trend: Stable, Impact: Low). Effective spread: 29 bps. TREND FOLLOWING strategy selected based on Sideways market trend. Conservative sizing due to uncertain conditions. 
+2025-06-07T22:20:57.421138Z  WARN aero_arb_mm_bot: 
+2025-06-07T22:20:57.422753Z  INFO aero_arb_mm_bot: Saved market making signal signal_id=c462f3ce-7d5f-483e-a5a6-ef712dec4c38 strategy=TrendFollowing spread_bps=29 priority=Medium
+2025-06-07T22:20:57.490478Z  INFO aero_arb_mm_bot: 💹 WETH/USDC | DEX: $2518.4101 | CEX: $2523.8000 | Diff: 0.213% | Vol: 0.00%
+2025-06-07T22:20:57.723870Z  WARN aero_arb_mm_bot: 🎯 ARBITRAGE OPPORTUNITY #1 [VALIDATED]
+2025-06-07T22:20:57.724029Z  WARN aero_arb_mm_bot: 📍 Pool: WETH/USDC
+2025-06-07T22:20:57.724046Z  WARN aero_arb_mm_bot: 📋 Strategy: Buy on Aerodrome → Sell on Binance
+2025-06-07T22:20:57.724060Z  WARN aero_arb_mm_bot: 💰 Profit Analysis:
+2025-06-07T22:20:57.724090Z  WARN aero_arb_mm_bot:    DEX Price: $2518.4101
+2025-06-07T22:20:57.724122Z  WARN aero_arb_mm_bot:    CEX Price: $2523.8000
+2025-06-07T22:20:57.724181Z  WARN aero_arb_mm_bot:    Net Profit: $0.51
+2025-06-07T22:20:57.724250Z  WARN aero_arb_mm_bot:    ROI: 0.205%
+2025-06-07T22:20:57.724303Z  WARN aero_arb_mm_bot: 📊 Volatility: 0.00% (Impact: Low)
+2025-06-07T22:20:57.724335Z  WARN aero_arb_mm_bot: ✅ All validation checks passed
+2025-06-07T22:20:57.726502Z  INFO aero_arb_mm_bot: Saved validated arbitrage opportunity opportunity_id=a4ac0a19-0999-486d-b61e-dc7d51ec4330 profit=0.5189890157288100803560948 validations_passed=true
+2025-06-07T22:20:57.727143Z  WARN aero_arb_mm_bot: 
+🎯 MARKET MAKING SIGNAL #58bb3789-5c7a-407b-9546-2649d904868d
+2025-06-07T22:20:57.727161Z  WARN aero_arb_mm_bot: 📍 Pool: WETH/USDC
+2025-06-07T22:20:57.727175Z  WARN aero_arb_mm_bot: 💰 Price Analysis:
+2025-06-07T22:20:57.727198Z  WARN aero_arb_mm_bot:    Fair Value (CEX): $2523.8000
+2025-06-07T22:20:57.727233Z  WARN aero_arb_mm_bot:    Current Pool:     $2518.4101
+2025-06-07T22:20:57.727268Z  WARN aero_arb_mm_bot:    Target Bid:       $2519.6357
+2025-06-07T22:20:57.727299Z  WARN aero_arb_mm_bot:    Target Ask:       $2527.9642
+2025-06-07T22:20:57.727326Z  WARN aero_arb_mm_bot:    Effective Spread: 33 bps (0.330%)
+2025-06-07T22:20:57.727343Z  WARN aero_arb_mm_bot: 📊 Volatility Analysis:
+2025-06-07T22:20:57.727358Z  WARN aero_arb_mm_bot:    Short-term:  0.00%
+2025-06-07T22:20:57.727375Z  WARN aero_arb_mm_bot:    Medium-term: 0.00%
+2025-06-07T22:20:57.727391Z  WARN aero_arb_mm_bot:    Long-term:   0.00%
+2025-06-07T22:20:57.727407Z  WARN aero_arb_mm_bot:    Trend: Stable, Impact: Low
+2025-06-07T22:20:57.727422Z  WARN aero_arb_mm_bot: 📋 Strategy: TrendFollowing
+2025-06-07T22:20:57.727446Z  WARN aero_arb_mm_bot:    Bid Size: 0.5000 ETH
+2025-06-07T22:20:57.727466Z  WARN aero_arb_mm_bot:    Ask Size: 0.5000 ETH
+2025-06-07T22:20:57.727484Z  WARN aero_arb_mm_bot:    Risk Level: Conservative
+2025-06-07T22:20:57.727499Z  WARN aero_arb_mm_bot:    Duration Est: 120min
+2025-06-07T22:20:57.727513Z  WARN aero_arb_mm_bot: ⚠️  Risk Assessment:
+2025-06-07T22:20:57.727530Z  WARN aero_arb_mm_bot:    Overall Risk Score: 9.0/100
+2025-06-07T22:20:57.727549Z  WARN aero_arb_mm_bot:    Volatility Risk: 10.0/100
+2025-06-07T22:20:57.727569Z  WARN aero_arb_mm_bot:    Max Recommended Exposure: 4.5500 ETH
+2025-06-07T22:20:57.727943Z  WARN aero_arb_mm_bot:    1-Day VaR: $0.00
+2025-06-07T22:20:57.727969Z  WARN aero_arb_mm_bot: 🚨 Execution Priority: Medium
+2025-06-07T22:20:57.727981Z  WARN aero_arb_mm_bot: 📝 Strategy Rationale:
+2025-06-07T22:20:57.727994Z  WARN aero_arb_mm_bot:    Market Analysis: Current price $2518.4101 vs fair value $2523.8000 (-0.21% deviation). Volatility: Short=0.0%, Medium=0.0%, Long=0.0% (Trend: Stable, Impact: Low). Effective spread: 33 bps. TREND FOLLOWING strategy selected based on Bearish market trend. Conservative sizing due to uncertain conditions. 
+2025-06-07T22:20:57.728006Z  WARN aero_arb_mm_bot: 
+2025-06-07T22:20:57.728327Z  INFO aero_arb_mm_bot: Saved market making signal signal_id=58bb3789-5c7a-407b-9546-2649d904868d strategy=TrendFollowing spread_bps=33 priority=Medium
+2025-06-07T22:20:59.138897Z  INFO aero_arb_mm_bot: 💹 vAMM-WETH/USDbC | DEX: $2519.7479 | CEX: $2523.8000 | Diff: 0.160% | Vol: 0.00%
+2025-06-07T22:20:59.382109Z  WARN aero_arb_mm_bot: 
+🎯 MARKET MAKING SIGNAL #99e23525-1534-4901-9863-5b2ee5917145
+2025-06-07T22:20:59.382157Z  WARN aero_arb_mm_bot: 📍 Pool: vAMM-WETH/USDbC
+2025-06-07T22:20:59.382173Z  WARN aero_arb_mm_bot: 💰 Price Analysis:
+2025-06-07T22:20:59.382199Z  WARN aero_arb_mm_bot:    Fair Value (CEX): $2523.8000
+2025-06-07T22:20:59.382234Z  WARN aero_arb_mm_bot:    Current Pool:     $2519.7479
+2025-06-07T22:20:59.382269Z  WARN aero_arb_mm_bot:    Target Bid:       $2520.1404
+2025-06-07T22:20:59.382299Z  WARN aero_arb_mm_bot:    Target Ask:       $2527.4595
+2025-06-07T22:20:59.382325Z  WARN aero_arb_mm_bot:    Effective Spread: 29 bps (0.290%)
+2025-06-07T22:20:59.382342Z  WARN aero_arb_mm_bot: 📊 Volatility Analysis:
+2025-06-07T22:20:59.382358Z  WARN aero_arb_mm_bot:    Short-term:  0.00%
+2025-06-07T22:20:59.382413Z  WARN aero_arb_mm_bot:    Medium-term: 0.00%
+2025-06-07T22:20:59.382434Z  WARN aero_arb_mm_bot:    Long-term:   0.00%
+2025-06-07T22:20:59.382440Z  WARN aero_arb_mm_bot:    Trend: Stable, Impact: Low
+2025-06-07T22:20:59.382446Z  WARN aero_arb_mm_bot: 📋 Strategy: TrendFollowing
+2025-06-07T22:20:59.382452Z  WARN aero_arb_mm_bot:    Bid Size: 0.5000 ETH
+2025-06-07T22:20:59.382459Z  WARN aero_arb_mm_bot:    Ask Size: 0.5000 ETH
+2025-06-07T22:20:59.382464Z  WARN aero_arb_mm_bot:    Risk Level: Conservative
+2025-06-07T22:20:59.382469Z  WARN aero_arb_mm_bot:    Duration Est: 120min
+2025-06-07T22:20:59.382474Z  WARN aero_arb_mm_bot: ⚠️  Risk Assessment:
+2025-06-07T22:20:59.382479Z  WARN aero_arb_mm_bot:    Overall Risk Score: 19.0/100
+2025-06-07T22:20:59.382500Z  WARN aero_arb_mm_bot:    Volatility Risk: 10.0/100
+2025-06-07T22:20:59.382541Z  WARN aero_arb_mm_bot:    Max Recommended Exposure: 4.0500 ETH
+2025-06-07T22:20:59.382549Z  WARN aero_arb_mm_bot:    1-Day VaR: $0.00
+2025-06-07T22:20:59.382554Z  WARN aero_arb_mm_bot: 🚨 Execution Priority: Medium
+2025-06-07T22:20:59.382560Z  WARN aero_arb_mm_bot: 📝 Strategy Rationale:
+2025-06-07T22:20:59.382566Z  WARN aero_arb_mm_bot:    Market Analysis: Current price $2519.7479 vs fair value $2523.8000 (-0.16% deviation). Volatility: Short=0.0%, Medium=0.0%, Long=0.0% (Trend: Stable, Impact: Low). Effective spread: 29 bps. TREND FOLLOWING strategy selected based on Sideways market trend. Conservative sizing due to uncertain conditions. 
+2025-06-07T22:20:59.382572Z  WARN aero_arb_mm_bot: 
+2025-06-07T22:20:59.382775Z  INFO aero_arb_mm_bot: Saved market making signal signal_id=99e23525-1534-4901-9863-5b2ee5917145 strategy=TrendFollowing spread_bps=29 priority=Medium
+2025-06-07T22:20:59.451825Z  INFO aero_arb_mm_bot: 💹 WETH/USDC | DEX: $2518.4101 | CEX: $2523.8000 | Diff: 0.213% | Vol: 0.00%
+2025-06-07T22:20:59.579160Z  WARN aero_arb_mm_bot: 🎯 ARBITRAGE OPPORTUNITY #2 [VALIDATED]
+2025-06-07T22:20:59.579231Z  WARN aero_arb_mm_bot: 📍 Pool: WETH/USDC
+2025-06-07T22:20:59.579259Z  WARN aero_arb_mm_bot: 📋 Strategy: Buy on Aerodrome → Sell on Binance
+2025-06-07T22:20:59.579284Z  WARN aero_arb_mm_bot: 💰 Profit Analysis:
+2025-06-07T22:20:59.579339Z  WARN aero_arb_mm_bot:    DEX Price: $2518.4101
+2025-06-07T22:20:59.579398Z  WARN aero_arb_mm_bot:    CEX Price: $2523.8000
+2025-06-07T22:20:59.579454Z  WARN aero_arb_mm_bot:    Net Profit: $0.51
+2025-06-07T22:20:59.579519Z  WARN aero_arb_mm_bot:    ROI: 0.205%
+2025-06-07T22:20:59.579569Z  WARN aero_arb_mm_bot: 📊 Volatility: 0.00% (Impact: Low)
+2025-06-07T22:20:59.579597Z  WARN aero_arb_mm_bot: ✅ All validation checks passed
+2025-06-07T22:20:59.580231Z  INFO aero_arb_mm_bot: Saved validated arbitrage opportunity opportunity_id=261cc397-7310-44e6-9ff6-470d2bcbe00c profit=0.5189890157288100803560948 validations_passed=true
+2025-06-07T22:20:59.580476Z  WARN aero_arb_mm_bot: 
+🎯 MARKET MAKING SIGNAL #e41f6345-64fb-4b2e-9a60-f43ffd19eca2
+2025-06-07T22:20:59.580504Z  WARN aero_arb_mm_bot: 📍 Pool: WETH/USDC
+2025-06-07T22:20:59.580529Z  WARN aero_arb_mm_bot: 💰 Price Analysis:
+2025-06-07T22:20:59.580566Z  WARN aero_arb_mm_bot:    Fair Value (CEX): $2523.8000
+2025-06-07T22:20:59.580626Z  WARN aero_arb_mm_bot:    Current Pool:     $2518.4101
+2025-06-07T22:20:59.580688Z  WARN aero_arb_mm_bot:    Target Bid:       $2519.6357
+2025-06-07T22:20:59.580741Z  WARN aero_arb_mm_bot:    Target Ask:       $2527.9642
+2025-06-07T22:20:59.580787Z  WARN aero_arb_mm_bot:    Effective Spread: 33 bps (0.330%)
+2025-06-07T22:20:59.580817Z  WARN aero_arb_mm_bot: 📊 Volatility Analysis:
+2025-06-07T22:20:59.580843Z  WARN aero_arb_mm_bot:    Short-term:  0.00%
+2025-06-07T22:20:59.580873Z  WARN aero_arb_mm_bot:    Medium-term: 0.00%
+2025-06-07T22:20:59.580901Z  WARN aero_arb_mm_bot:    Long-term:   0.00%
+2025-06-07T22:20:59.580929Z  WARN aero_arb_mm_bot:    Trend: Stable, Impact: Low
+2025-06-07T22:20:59.580955Z  WARN aero_arb_mm_bot: 📋 Strategy: TrendFollowing
+2025-06-07T22:20:59.580983Z  WARN aero_arb_mm_bot:    Bid Size: 0.5000 ETH
+2025-06-07T22:20:59.581017Z  WARN aero_arb_mm_bot:    Ask Size: 0.5000 ETH
+2025-06-07T22:20:59.581048Z  WARN aero_arb_mm_bot:    Risk Level: Conservative
+2025-06-07T22:20:59.581073Z  WARN aero_arb_mm_bot:    Duration Est: 120min
+2025-06-07T22:20:59.581098Z  WARN aero_arb_mm_bot: ⚠️  Risk Assessment:
+2025-06-07T22:20:59.581127Z  WARN aero_arb_mm_bot:    Overall Risk Score: 9.0/100
+2025-06-07T22:20:59.581162Z  WARN aero_arb_mm_bot:    Volatility Risk: 10.0/100
+2025-06-07T22:20:59.581198Z  WARN aero_arb_mm_bot:    Max Recommended Exposure: 4.5500 ETH
+2025-06-07T22:20:59.581231Z  WARN aero_arb_mm_bot:    1-Day VaR: $0.00
+2025-06-07T22:20:59.581252Z  WARN aero_arb_mm_bot: 🚨 Execution Priority: Medium
+2025-06-07T22:20:59.581391Z  WARN aero_arb_mm_bot: 📝 Strategy Rationale:
+2025-06-07T22:20:59.581412Z  WARN aero_arb_mm_bot:    Market Analysis: Current price $2518.4101 vs fair value $2523.8000 (-0.21% deviation). Volatility: Short=0.0%, Medium=0.0%, Long=0.0% (Trend: Stable, Impact: Low). Effective spread: 33 bps. TREND FOLLOWING strategy selected based on Bearish market trend. Conservative sizing due to uncertain conditions. 
+2025-06-07T22:20:59.581427Z  WARN aero_arb_mm_bot: 
+2025-06-07T22:20:59.581850Z  INFO aero_arb_mm_bot: Saved market making signal signal_id=e41f6345-64fb-4b2e-9a60-f43ffd19eca2 strategy=TrendFollowing spread_bps=33 priority=Medium
+2025-06-07T22:21:01.143314Z  INFO aero_arb_mm_bot: 💹 vAMM-WETH/USDbC | DEX: $2519.7479 | CEX: $2523.8000 | Diff: 0.160% | Vol: 0.00%
+2025-06-07T22:21:01.277013Z  WARN aero_arb_mm_bot: 
+🎯 MARKET MAKING SIGNAL #3604d949-b50d-4a74-91b3-145f6e3eb066
+2025-06-07T22:21:01.277083Z  WARN aero_arb_mm_bot: 📍 Pool: vAMM-WETH/USDbC
+2025-06-07T22:21:01.277110Z  WARN aero_arb_mm_bot: 💰 Price Analysis:
+2025-06-07T22:21:01.277153Z  WARN aero_arb_mm_bot:    Fair Value (CEX): $2523.8000
+2025-06-07T22:21:01.277213Z  WARN aero_arb_mm_bot:    Current Pool:     $2519.7479
+2025-06-07T22:21:01.277275Z  WARN aero_arb_mm_bot:    Target Bid:       $2520.1404
+2025-06-07T22:21:01.277329Z  WARN aero_arb_mm_bot:    Target Ask:       $2527.4595
+2025-06-07T22:21:01.277375Z  WARN aero_arb_mm_bot:    Effective Spread: 29 bps (0.290%)
+2025-06-07T22:21:01.277405Z  WARN aero_arb_mm_bot: 📊 Volatility Analysis:
+2025-06-07T22:21:01.277432Z  WARN aero_arb_mm_bot:    Short-term:  0.00%
+2025-06-07T22:21:01.277461Z  WARN aero_arb_mm_bot:    Medium-term: 0.00%
+2025-06-07T22:21:01.277490Z  WARN aero_arb_mm_bot:    Long-term:   0.00%
+2025-06-07T22:21:01.277521Z  WARN aero_arb_mm_bot:    Trend: Stable, Impact: Low
+2025-06-07T22:21:01.277547Z  WARN aero_arb_mm_bot: 📋 Strategy: TrendFollowing
+2025-06-07T22:21:01.277577Z  WARN aero_arb_mm_bot:    Bid Size: 0.5000 ETH
+2025-06-07T22:21:01.277611Z  WARN aero_arb_mm_bot:    Ask Size: 0.5000 ETH
+2025-06-07T22:21:01.277670Z  WARN aero_arb_mm_bot:    Risk Level: Conservative
+2025-06-07T22:21:01.277700Z  WARN aero_arb_mm_bot:    Duration Est: 120min
+2025-06-07T22:21:01.277778Z  WARN aero_arb_mm_bot: ⚠️  Risk Assessment:
+2025-06-07T22:21:01.277819Z  WARN aero_arb_mm_bot:    Overall Risk Score: 19.0/100
+2025-06-07T22:21:01.277860Z  WARN aero_arb_mm_bot:    Volatility Risk: 10.0/100
+2025-06-07T22:21:01.277896Z  WARN aero_arb_mm_bot:    Max Recommended Exposure: 4.0500 ETH
+2025-06-07T22:21:01.277930Z  WARN aero_arb_mm_bot:    1-Day VaR: $0.00
+2025-06-07T22:21:01.277958Z  WARN aero_arb_mm_bot: 🚨 Execution Priority: Medium
+2025-06-07T22:21:01.277983Z  WARN aero_arb_mm_bot: 📝 Strategy Rationale:
+2025-06-07T22:21:01.278011Z  WARN aero_arb_mm_bot:    Market Analysis: Current price $2519.7479 vs fair value $2523.8000 (-0.16% deviation). Volatility: Short=0.0%, Medium=0.0%, Long=0.0% (Trend: Stable, Impact: Low). Effective spread: 29 bps. TREND FOLLOWING strategy selected based on Sideways market trend. Conservative sizing due to uncertain conditions. 
+2025-06-07T22:21:01.278036Z  WARN aero_arb_mm_bot: 
+2025-06-07T22:21:01.278906Z  INFO aero_arb_mm_bot: Saved market making signal signal_id=3604d949-b50d-4a74-91b3-145f6e3eb066 strategy=TrendFollowing spread_bps=29 priority=Medium
+2025-06-07T22:21:01.392159Z  INFO aero_arb_mm_bot: 💹 WETH/USDC | DEX: $2518.4101 | CEX: $2523.8000 | Diff: 0.213% | Vol: 0.00%
+2025-06-07T22:21:01.521912Z  WARN aero_arb_mm_bot: 🎯 ARBITRAGE OPPORTUNITY #3 [VALIDATED]
+2025-06-07T22:21:01.521986Z  WARN aero_arb_mm_bot: 📍 Pool: WETH/USDC
+2025-06-07T22:21:01.522017Z  WARN aero_arb_mm_bot: 📋 Strategy: Buy on Aerodrome → Sell on Binance
+2025-06-07T22:21:01.522043Z  WARN aero_arb_mm_bot: 💰 Profit Analysis:
+2025-06-07T22:21:01.522097Z  WARN aero_arb_mm_bot:    DEX Price: $2518.4101
+2025-06-07T22:21:01.522156Z  WARN aero_arb_mm_bot:    CEX Price: $2523.8000
+2025-06-07T22:21:01.522211Z  WARN aero_arb_mm_bot:    Net Profit: $0.51
+2025-06-07T22:21:01.522279Z  WARN aero_arb_mm_bot:    ROI: 0.205%
+2025-06-07T22:21:01.522329Z  WARN aero_arb_mm_bot: 📊 Volatility: 0.00% (Impact: Low)
+2025-06-07T22:21:01.522389Z  WARN aero_arb_mm_bot: ✅ All validation checks passed
+2025-06-07T22:21:01.523269Z  INFO aero_arb_mm_bot: Saved validated arbitrage opportunity opportunity_id=38975105-744c-43ee-af57-5a54487a83a9 profit=0.5189890157288100803560948 validations_passed=true
+2025-06-07T22:21:01.523427Z  WARN aero_arb_mm_bot: 
+🎯 MARKET MAKING SIGNAL #8aafb7ce-bfba-439a-8f81-e14203f829b9
+2025-06-07T22:21:01.523444Z  WARN aero_arb_mm_bot: 📍 Pool: WETH/USDC
+2025-06-07T22:21:01.523458Z  WARN aero_arb_mm_bot: 💰 Price Analysis:
+2025-06-07T22:21:01.523480Z  WARN aero_arb_mm_bot:    Fair Value (CEX): $2523.8000
+2025-06-07T22:21:01.523515Z  WARN aero_arb_mm_bot:    Current Pool:     $2518.4101
+2025-06-07T22:21:01.523551Z  WARN aero_arb_mm_bot:    Target Bid:       $2519.6357
+2025-06-07T22:21:01.523581Z  WARN aero_arb_mm_bot:    Target Ask:       $2527.9642
+2025-06-07T22:21:01.523607Z  WARN aero_arb_mm_bot:    Effective Spread: 33 bps (0.330%)
+2025-06-07T22:21:01.523625Z  WARN aero_arb_mm_bot: 📊 Volatility Analysis:
+2025-06-07T22:21:01.523640Z  WARN aero_arb_mm_bot:    Short-term:  0.00%
+2025-06-07T22:21:01.523657Z  WARN aero_arb_mm_bot:    Medium-term: 0.00%
+2025-06-07T22:21:01.523673Z  WARN aero_arb_mm_bot:    Long-term:   0.00%
+2025-06-07T22:21:01.523690Z  WARN aero_arb_mm_bot:    Trend: Stable, Impact: Low
+2025-06-07T22:21:01.523704Z  WARN aero_arb_mm_bot: 📋 Strategy: TrendFollowing
+2025-06-07T22:21:01.523721Z  WARN aero_arb_mm_bot:    Bid Size: 0.5000 ETH
+2025-06-07T22:21:01.523740Z  WARN aero_arb_mm_bot:    Ask Size: 0.5000 ETH
+2025-06-07T22:21:01.523807Z  WARN aero_arb_mm_bot:    Risk Level: Conservative
+2025-06-07T22:21:01.523823Z  WARN aero_arb_mm_bot:    Duration Est: 120min
+2025-06-07T22:21:01.523837Z  WARN aero_arb_mm_bot: ⚠️  Risk Assessment:
+2025-06-07T22:21:01.523874Z  WARN aero_arb_mm_bot:    Overall Risk Score: 9.0/100
+2025-06-07T22:21:01.523895Z  WARN aero_arb_mm_bot:    Volatility Risk: 10.0/100
+2025-06-07T22:21:01.523916Z  WARN aero_arb_mm_bot:    Max Recommended Exposure: 4.5500 ETH
+2025-06-07T22:21:01.523936Z  WARN aero_arb_mm_bot:    1-Day VaR: $0.00
+2025-06-07T22:21:01.523952Z  WARN aero_arb_mm_bot: 🚨 Execution Priority: Medium
+2025-06-07T22:21:01.523966Z  WARN aero_arb_mm_bot: 📝 Strategy Rationale:
+2025-06-07T22:21:01.523982Z  WARN aero_arb_mm_bot:    Market Analysis: Current price $2518.4101 vs fair value $2523.8000 (-0.21% deviation). Volatility: Short=0.0%, Medium=0.0%, Long=0.0% (Trend: Stable, Impact: Low). Effective spread: 33 bps. TREND FOLLOWING strategy selected based on Bearish market trend. Conservative sizing due to uncertain conditions. 
+2025-06-07T22:21:01.523996Z  WARN aero_arb_mm_bot: 
+2025-06-07T22:21:01.524446Z  INFO aero_arb_mm_bot: Saved market making signal signal_id=8aafb7ce-bfba-439a-8f81-e14203f829b9 strategy=TrendFollowing spread_bps=33 priority=Medium
+2025-06-07T22:21:01.878863Z  INFO aero_arb_mm_bot: 
+📛 Received shutdown signal (Ctrl+C)...
+2025-06-07T22:21:01.878984Z  INFO aero_arb_mm_bot: Shutdown signal received, exiting main loop...
+2025-06-07T22:21:01.878994Z  INFO aero_arb_mm_bot: 
+🛑 Shutting down gracefully...
+2025-06-07T22:21:01.879000Z  INFO aero_arb_mm_bot: Final statistics:
+2025-06-07T22:21:01.879012Z  INFO aero_arb_mm_bot:    Total runtime: 5.025594708s
+2025-06-07T22:21:01.879019Z  INFO aero_arb_mm_bot:    Arbitrage opportunities found: 6
+2025-06-07T22:21:01.879024Z  INFO aero_arb_mm_bot:    Profitable arbitrage opportunities: 3
+2025-06-07T22:21:01.879035Z  INFO aero_arb_mm_bot:    Total potential arbitrage profit: $1.55
+2025-06-07T22:21:01.879043Z  INFO aero_arb_mm_bot:    Market making signals generated: 6
+2025-06-07T22:21:01.879049Z  INFO aero_arb_mm_bot:    Trade executions simulated: 0
+2025-06-07T22:21:01.879054Z  INFO aero_arb_mm_bot:    Successful executions: 0
+2025-06-07T22:21:01.879062Z  INFO aero_arb_mm_bot:    Total errors: {}
+2025-06-07T22:46:42.742775Z  INFO aero_arb_mm_bot: 🛩️  Aerodrome Arbitrage Bot v0.5.0 - Trade Execution & Volatility
+2025-06-07T22:46:42.742847Z  INFO aero_arb_mm_bot: 📋 Configuration:
+2025-06-07T22:46:42.742967Z  INFO aero_arb_mm_bot:    Network: mainnet
+2025-06-07T22:46:42.742975Z  INFO aero_arb_mm_bot:    Trade Size: 0.1 ETH
+2025-06-07T22:46:42.742996Z  INFO aero_arb_mm_bot:    Min Profit: $0.50
+2025-06-07T22:46:42.743002Z  INFO aero_arb_mm_bot:    Safety Checks: true
+2025-06-07T22:46:42.743007Z  INFO aero_arb_mm_bot:    Market Making: true
+2025-06-07T22:46:42.743012Z  INFO aero_arb_mm_bot:    Trade Execution: false
+2025-06-07T22:51:11.411061Z  INFO aero_arb_mm_bot: 🛩️  Aerodrome Arbitrage Bot v0.5.0 - Trade Execution & Volatility
+2025-06-07T22:51:11.411144Z  INFO aero_arb_mm_bot: 📋 Configuration:
+2025-06-07T22:51:11.411244Z  INFO aero_arb_mm_bot:    Network: sepolia
+2025-06-07T22:51:11.411251Z  INFO aero_arb_mm_bot:    Trade Size: 0.1 ETH
+2025-06-07T22:51:11.411273Z  INFO aero_arb_mm_bot:    Min Profit: $0.10
+2025-06-07T22:51:11.411279Z  INFO aero_arb_mm_bot:    Safety Checks: true
+2025-06-07T22:51:11.411284Z  INFO aero_arb_mm_bot:    Market Making: true
+2025-06-07T22:51:11.411288Z  INFO aero_arb_mm_bot:    Trade Execution: true
+2025-06-07T22:51:16.414331Z  INFO aero_arb_mm_bot:    Max Gas Price: 50 gwei
+2025-06-07T22:51:16.415083Z  INFO aero_arb_mm_bot:    Slippage Tolerance: 50 bps
+2025-06-07T22:51:16.415102Z  INFO aero_arb_mm_bot:    ⚠️  TESTNET MODE - No real funds at risk
+2025-06-07T22:51:16.415138Z  INFO aero_arb_mm_bot:    Volatility Threshold: 5.0%
+2025-06-07T22:51:16.415157Z  INFO aero_arb_mm_bot:    Volatility Spread Multiplier: 2.0x
+2025-06-07T22:51:16.431110Z  INFO aero_arb_mm_bot: 🔗 Testing connection to Base network...
+2025-06-07T22:51:16.580897Z  INFO aero_arb_mm_bot: ✅ Connected to Base at block 31273664
+2025-06-07T22:51:16.580942Z  INFO aero_arb_mm_bot: 🔗 Testing connection to Base Sepolia...
+2025-06-07T22:51:16.688709Z  INFO aero_arb_mm_bot: ✅ Connected to Base Sepolia at block 26784193
+2025-06-07T22:51:16.688757Z  INFO aero_arb_mm_bot: 
+🔍 Validating Aerodrome pools on sepolia...
+2025-06-07T22:51:16.753841Z  WARN aero_arb_mm_bot: Attempt 1/3 failed for validate pool WETH/USDC-Sepolia: ABI decoding failed: buffer overrun while deserializing. Retrying in 100ms...
+2025-06-07T22:51:16.947374Z  WARN aero_arb_mm_bot: Attempt 2/3 failed for validate pool WETH/USDC-Sepolia: ABI decoding failed: buffer overrun while deserializing. Retrying in 200ms...
+2025-06-07T22:51:17.235140Z ERROR aero_arb_mm_bot: ❌ WETH/USDC-Sepolia - Validation failed: Pool validation failed: Network error: validate pool WETH/USDC-Sepolia failed after 3 attempts

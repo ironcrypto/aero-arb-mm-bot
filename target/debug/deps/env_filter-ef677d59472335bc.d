@@ -1,0 +1,10 @@
+/Users/stephanethomas/myML/rust/aero-arb-mm-bot/target/debug/deps/libenv_filter-ef677d59472335bc.rmeta: /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/lib.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/directive.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/filter.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/filtered_log.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/op.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/parser.rs
+
+/Users/stephanethomas/myML/rust/aero-arb-mm-bot/target/debug/deps/env_filter-ef677d59472335bc.d: /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/lib.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/directive.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/filter.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/filtered_log.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/op.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/parser.rs
+
+/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/lib.rs:
+/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/directive.rs:
+/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/filter.rs:
+/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/filtered_log.rs:
+/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/op.rs:
+/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/env_filter-0.1.3/src/parser.rs:

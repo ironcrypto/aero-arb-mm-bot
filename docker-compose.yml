@@ -1,0 +1,124 @@
+version: '3.8'
+
+services:
+  aero-arb-mm-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # For Alpine scratch build, uncomment the line below:
+      # dockerfile: Dockerfile.alpine
+    image: aero-arb-mm-bot:latest
+    container_name: aero-arb-mm-bot
+    restart: unless-stopped
+    
+    # Environment variables
+    environment:
+      # Required - will be loaded from .env file
+      - ALCHEMY_API_KEY=${ALCHEMY_API_KEY}
+      
+      # Network configuration
+      - NETWORK=${NETWORK:-mainnet}
+      - RUST_LOG=${RUST_LOG:-info}
+      
+      # Arbitrage settings
+      - TRADE_SIZE_ETH=${TRADE_SIZE_ETH:-0.1}
+      - MIN_PROFIT_USD=${MIN_PROFIT_USD:-0.50}
+      
+      # Market making settings
+      - ENABLE_MARKET_MAKING=${ENABLE_MARKET_MAKING:-true}
+      - BASE_SPREAD_BPS=${BASE_SPREAD_BPS:-30}
+      - MAX_POSITION_SIZE_ETH=${MAX_POSITION_SIZE_ETH:-5.0}
+      
+      # Volatility settings
+      - VOLATILITY_THRESHOLD=${VOLATILITY_THRESHOLD:-5.0}
+      - VOLATILITY_SPREAD_MULTIPLIER=${VOLATILITY_SPREAD_MULTIPLIER:-2.0}
+      
+      # Trade execution settings (TESTNET ONLY)
+      - ENABLE_TRADE_EXECUTION=${ENABLE_TRADE_EXECUTION:-false}
+      - MAX_GAS_PRICE_GWEI=${MAX_GAS_PRICE_GWEI:-50}
+      - SLIPPAGE_TOLERANCE_BPS=${SLIPPAGE_TOLERANCE_BPS:-50}
+      # WARNING: Only uncomment for testnet - never use on mainnet
+      # - PRIVATE_KEY=${PRIVATE_KEY}
+      
+      # Safety settings
+      - ENABLE_SAFETY_CHECKS=${ENABLE_SAFETY_CHECKS:-true}
+    
+    # Volume mount for output data
+    volumes:
+      - ./output:/app/output
+    
+    # Resource limits (optional - uncomment if needed)
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: '0.5'
+    #       memory: 512M
+    #     reservations:
+    #       cpus: '0.25'
+    #       memory: 256M
+    
+    # Logging configuration
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
+        compress: "true"
+    
+    # Basic health check
+    healthcheck:
+      test: ["CMD", "test", "-f", "/app/output/logs/aerodrome-bot.log"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 45s
+    
+    # Network
+    networks:
+      - aero-network
+
+# Optional monitoring stack (uncomment to enable)
+# To use monitoring, run: docker-compose --profile monitoring up -d
+  
+  # prometheus:
+  #   image: prom/prometheus:latest
+  #   container_name: aero-prometheus
+  #   restart: unless-stopped
+  #   profiles: ["monitoring"]
+  #   ports:
+  #     - "127.0.0.1:9090:9090"
+  #   volumes:
+  #     - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+  #     - prometheus_data:/prometheus
+  #   command:
+  #     - '--config.file=/etc/prometheus/prometheus.yml'
+  #     - '--storage.tsdb.path=/prometheus'
+  #   networks:
+  #     - aero-network
+
+  # grafana:
+  #   image: grafana/grafana:latest
+  #   container_name: aero-grafana
+  #   restart: unless-stopped
+  #   profiles: ["monitoring"]
+  #   ports:
+  #     - "127.0.0.1:3000:3000"
+  #   volumes:
+  #     - grafana_data:/var/lib/grafana
+  #   environment:
+  #     - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD:-admin}
+  #     - GF_USERS_ALLOW_SIGN_UP=false
+  #   networks:
+  #     - aero-network
+
+# Networks
+networks:
+  aero-network:
+    driver: bridge
+
+# Volumes (for monitoring - uncomment if using monitoring)
+# volumes:
+#   prometheus_data:
+#     driver: local
+#   grafana_data:
+#     driver: local

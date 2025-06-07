@@ -1,0 +1,8 @@
+/Users/stephanethomas/myML/rust/aero-arb-mm-bot/target/debug/deps/libc_kzg-bdf4b9c3625e6729.rmeta: /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/c-kzg-1.0.3/bindings/rust/src/lib.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/c-kzg-1.0.3/bindings/rust/src/bindings/mod.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/c-kzg-1.0.3/bindings/rust/src/bindings/serde.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/c-kzg-1.0.3/bindings/rust/src/bindings/./generated.rs
+
+/Users/stephanethomas/myML/rust/aero-arb-mm-bot/target/debug/deps/c_kzg-bdf4b9c3625e6729.d: /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/c-kzg-1.0.3/bindings/rust/src/lib.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/c-kzg-1.0.3/bindings/rust/src/bindings/mod.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/c-kzg-1.0.3/bindings/rust/src/bindings/serde.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/c-kzg-1.0.3/bindings/rust/src/bindings/./generated.rs
+
+/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/c-kzg-1.0.3/bindings/rust/src/lib.rs:
+/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/c-kzg-1.0.3/bindings/rust/src/bindings/mod.rs:
+/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/c-kzg-1.0.3/bindings/rust/src/bindings/serde.rs:
+/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/c-kzg-1.0.3/bindings/rust/src/bindings/./generated.rs:
