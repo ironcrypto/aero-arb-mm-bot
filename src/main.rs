@@ -22,7 +22,7 @@ use chrono::{DateTime, Utc};
 use std::env;
 use lazy_static::lazy_static;
 use tracing_subscriber::layer::SubscriberExt;
-use std::time::{Duration, Instant, SystemTime, UNIX_EPOCH};
+use std::time::{Duration, Instant, SystemTime};
 use std::collections::HashMap;
 use std::collections::VecDeque;
 use std::error::Error;
@@ -41,6 +41,7 @@ const USDBC_MAINNET: Address = address!("d9aAEc86B65D86f6A7B5B1b0c42FFA531710b6C
 // Base Sepolia testnet addresses
 const WETH_SEPOLIA: Address = address!("4200000000000000000000000000000000000006");
 const USDC_SEPOLIA: Address = address!("AF33ADd7918F685B2A82C1077bd8c07d220FFA04"); // Base Sepolia USDC
+#[allow(dead_code)]
 const UNISWAP_V2_ROUTER_SEPOLIA: Address = address!("0xC532a74256D3Db42D0Bf7a0400fEFDbad7694008");
 
 // Mainnet pools
@@ -93,6 +94,7 @@ struct Config {
     // Trade Execution Configuration
     enable_trade_execution: bool,
     network: String,
+    #[allow(dead_code)]
     execution_network: String,          // For execution (sepolia)
     max_gas_price_gwei: u32,
     slippage_tolerance_bps: u32,
@@ -526,7 +528,7 @@ impl TradeExecutionEngine {
         let provider = self.sepolia_provider.as_ref()
             .ok_or_else(|| anyhow::anyhow!("Sepolia provider not initialized"))?;
         
-        let wallet = self.wallet.as_ref()
+        let _wallet = self.wallet.as_ref()
             .ok_or_else(|| anyhow::anyhow!("Wallet not initialized"))?;
 
         // For testing, we'll use Uniswap V2 Router on Sepolia
@@ -611,7 +613,7 @@ impl TradeExecutionEngine {
         };
         
         // Get the recipient address (the wallet address)
-        let to = if let Some(wallet) = &self.wallet {
+        let to = if let Some(_wallet) = &self.wallet {
             // In real implementation, get the address from wallet
             // For now, use a placeholder
             address!("0000000000000000000000000000000000000001")
