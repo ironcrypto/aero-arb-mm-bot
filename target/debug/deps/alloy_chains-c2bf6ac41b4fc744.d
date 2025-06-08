@@ -1,9 +1,0 @@
-/Users/stephanethomas/myML/rust/aero-arb-mm-bot/target/debug/deps/liballoy_chains-c2bf6ac41b4fc744.rmeta: /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/lib.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/chain.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/named.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/spec.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/../README.md
-
-/Users/stephanethomas/myML/rust/aero-arb-mm-bot/target/debug/deps/alloy_chains-c2bf6ac41b4fc744.d: /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/lib.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/chain.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/named.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/spec.rs /Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/../README.md
-
-/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/lib.rs:
-/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/chain.rs:
-/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/named.rs:
-/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/spec.rs:
-/Users/stephanethomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/alloy-chains-0.2.3/src/../README.md:
