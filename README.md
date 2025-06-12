@@ -1,6 +1,6 @@
 # Aero-Arb-MM Bot v0.5.0
 
-🛩️ A sophisticated DeFi bot for arbitrage detection, market-making simulation, and trade execution simulation on Aerodrome DEX (Base L2).
+A production-ready arbitrage and market making bot for the Base network's Aerodrome DEX.
 
 ## 🌟 Features
 
@@ -392,6 +392,72 @@ monitor:
 
 ## 🚀 Quick Start
 
+### Modules Structure
+
+```
+src/
+├── lib.rs                 # Main library exports
+├── main.rs                # Application entry point
+├── config/                # Configuration management
+│   ├── mod.rs
+│   └── settings.rs
+├── types/                 # Core data structures
+│   ├── mod.rs
+│   ├── addresses.rs       # Network addresses
+│   ├── arbitrage.rs       # Arbitrage types
+│   ├── execution.rs       # Execution types
+│   ├── market_making.rs   # Market making types
+│   ├── volatility.rs      # Volatility types
+│   ├── validation.rs      # Validation types
+│   ├── pools.rs           # Pool types
+│   └── health.rs          # Health monitoring types
+├── errors/                # Error handling
+│   ├── mod.rs
+│   ├── bot_error.rs       # Custom error types
+│   ├── circuit_breaker.rs # Circuit breaker implementation
+│   └── recovery.rs        # Error recovery strategies
+├── network/               # Network and connectivity
+│   ├── mod.rs
+│   ├── providers.rs       # Provider setup
+│   └── retry.rs           # Retry logic
+├── pools/                 # Pool management
+│   ├── mod.rs
+│   ├── info.rs            # Pool information
+│   ├── reserves.rs        # Reserve fetching
+│   ├── validation.rs      # Pool validation
+│   └── liquidity.rs       # Liquidity analysis
+├── arbitrage/             # Arbitrage detection
+│   ├── mod.rs
+│   └── calculator.rs      # Opportunity calculation
+├── market_making/         # Market making strategies
+│   ├── mod.rs
+│   └── engine.rs          # Market making engine
+├── execution/             # Trade execution
+│   ├── mod.rs
+│   ├── engine.rs          # Execution engine
+│   └── simulation.rs      # Execution simulation
+├── volatility/            # Volatility analysis
+│   ├── mod.rs
+│   ├── calculator.rs      # Volatility calculator
+│   └── multi_timeframe.rs # Multi-timeframe analysis
+├── validation/            # Validation logic
+│   ├── mod.rs
+│   ├── price.rs           # Price validation
+│   ├── liquidity.rs       # Liquidity validation
+│   └── opportunity.rs     # Opportunity validation
+├── utils/                 # Utility functions
+│   ├── mod.rs
+│   ├── math.rs            # Mathematical utilities
+│   ├── logging.rs         # Logging setup
+│   ├── health.rs          # Health monitoring
+│   └── display.rs         # Display utilities
+└── storage/               # Data persistence
+    ├── mod.rs
+    ├── opportunities.rs   # Arbitrage storage
+    ├── market_making.rs   # Signal storage
+    └── executions.rs      # Execution storage
+```
+
 ### Prerequisites
 - Rust 1.70+ installed OR Docker
 - Base network RPC access (Alchemy account)
@@ -511,7 +577,15 @@ Logs all simulated trade executions with gas usage, slippage, and profitability 
 ## 🛣️ Roadmap
 
 ### Upcoming Features (v0.6.0+)
+- Market Making Engine
+  - [ ] Make TARGET_INVENTORY_RATIO configurable per strategy
+  - [ ] Add inventory-driven spread adjustments
+  - [ ] Create inventory-aware position sizing
+  - [ ] Add inventory rebalancing signals
+  - [ ] Integrate rebalancing into signal generation
 - [ ] Real Trading Integration: Actual transaction execution with safety limits
+
+### Advanced Features for further versions
 - [ ] Multi-DEX Support: Uniswap V4, SushiSwap integration
 - [ ] Predictive Volatility: ML-based volatility forecasting
 - [ ] Advanced Strategies: Reinforcement learning for strategy selection
@@ -545,3 +619,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 **Built with ❤️ and Rust 🦀 | Optimized for Base L2 ⚡**
 
 *For support, questions, or feature requests, please open an issue on GitHub.*
+
+
+
